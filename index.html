@@ -1,103 +1,136 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>My Favorite Web Design Things</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
-  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-  <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
-</head>
-
-<body>
-  
-  <!-- start page one here -->
-  <div data-role="page" id="home">
-  
-  <div data-role="header">
-    <h2>Loving the Interwebs</h2>
-  </div><!--end header-->
-  
-  <div data-role="content">
-    <p>Web Design is truly a passion of mine. It's creative and logical at the same time.
-    It's also very dynamic. There are new things to learn and absorb everyday. I am constantly reading, listening 
-    and talking with others in our field about best practices for front end design and interaction design. In the 
-    pages that follow, I'm listing some of my favorite resources. There are so many- it was hard to narrow it down!</p>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Interweb Resources</title>
+		<link rel="stylesheet" href="themes/mobiletechone.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile.structure-1.4.1.min.css" />
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+	</head>
+	
+	<body>
+		<div data-role="page" data-theme="a" id="home">
+			<div data-role="header" data-position="inline">
+				<h1>Interwebs Love</h1>
+			</div><!--end header-->
+		
+			<div data-role="content" data-theme="a">
+    			<p>Web Design is truly a passion of mine. It's creative and logical at the same time.
+    			It's also very dynamic. There are new things to learn and absorb everyday. I am constantly reading, listening 
+    			and talking with others in our field about best practices for front end design and interaction design. In the 
+    			pages that follow, I'm listing some of my favorite resources. There are so many- it was hard to narrow it down!</p>
             
-    <h4>More Resources...</h4>
+    			<h4>More Resources...</h4>
     
-    <ul data-role="listview" data-inset="true">
-      <li><a href="#blogs" title="Blogs">Blogs</a></li>
-      <li><a href="#books" title="Books">Books</a></li>
-      <li><a href="#podcasts" title="Podcasts">Podcasts</a></li>
-    </ul>
-  </div><!--end content-->
+    			<ul data-role="listview" data-inset="true">
+      				<li><a href="modal.html" data-rel="dialog" data-transition="slidedown" title="Let's see where we are" class="ui-btn ui-icon-heart ui-btn-icon-left">Blogs</a></li>
+      				<li><a href="#books" class="ui-btn ui-icon-heart ui-btn-icon-left" title="Books">Books</a></li>
+      				<li><a href="#podcasts" class="ui-btn ui-icon-heart ui-btn-icon-left" title="Podcasts">Podcasts</a></li>
+    			</ul>
+  			</div><!--end content-->
   
-  <div data-role="footer">
-    <h3>Copyright 2014 | Jennifer Beatty</h3>
-  </div><!--end footer-->
+  			<div data-role="footer">
+   		 		<h3>Copyright 2014 | Jennifer Beatty</h3>
+  			</div><!--end footer-->
   
-  </div><!--end page one-->
+  	    </div><!--end page one-->
   
   
-  <!--start page two here-->
-  <div data-role="page" id="blogs">
+  		<!--start page two here-->
+  	    <div data-role="page" id="blogs">
   
-  <div data-role="header">
-    <h2>Blogs I Read</h2>
-  </div><!--end header-->
+  			<div data-role="header">
+    			<h2>Blogs I Read</h2>
+  			</div><!--end header-->
   
-  <div data-role="content">
-    <p>Page content</p>
+  			<div data-role="content">
+    			<ul data-role="listview" data-inset="true">
+     				<li>A List Apart</li>
+      				<li>Smashing Magazine</li>
+      				<li>Brad Frost</li>
+   		    	</ul>
+   		    	
+    			<ul data-role="listview" data-inset="true">
+      				<li><a href="#blogs" class="ui-btn ui-icon-heart ui-btn-icon-left" title="Blogs">Blogs</a></li>
+      				<li><a href="#books" class="ui-btn ui-icon-heart ui-btn-icon-left" title="Books">Books</a></li>
+      				<li><a href="#podcasts" class="ui-btn ui-icon-heart ui-btn-icon-left" title="Podcasts">Podcasts</a></li>
+    			</ul>
+    			
+				<p><a href="#home" data-role="button" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-left" title="Go Back">Home</a></p>
+  			</div><!--end content-->
+  
+  			<div data-role="footer">
+    			<h3>Copyright 2014 | Jennifer Beatty</h3>
+  			</div><!--end footer-->
+  
+ 	 	</div><!--end page two-->
+  
+  		<!--start page three here-->
+  		<div data-role="page" id="books">
+  
+  			<div data-role="header">
+    			<h2>Books I Love</h2>
+  			</div><!--end header-->
+  
+  			<div data-role="content">
+    			<p>Some of my favorite books are:</p>
     
-    <p><a href="#books" title="Some of my favorite books">Books</a></p>
-    <p><a href="#home" data-direction="reverse" title="Go Back">Home</a>
-  </div><!--end content-->
+    			<ul data-role="listview" data-inset="true">
+      				<li>Smashing Book Four</li>
+      				<li>HTML & CSS</li>
+      				<li>Sass For Web Designers</li>
+    			</ul>
+    			
+    			<ul data-role="listview" data-inset="true">
+      				<li><a href="#blogs" class="ui-btn ui-icon-heart ui-btn-icon-left" title="Blogs">Blogs</a></li>
+      				<li><a href="#books" class="ui-btn ui-icon-heart ui-btn-icon-left" title="Books">Books</a></li>
+      				<li><a href="#podcasts" class="ui-btn ui-icon-heart ui-btn-icon-left" title="Podcasts">Podcasts</a></li>
+    			</ul>
+    			
+				<p><a href="#home" data-role="button" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-left" title="Go Back">Home</a></p>
+  			</div><!--end content-->
   
-  <div data-role="footer">
-    <h3>Copyright 2014 | Jennifer Beatty</h3>
-  </div><!--end footer-->
+  			<div data-role="footer">
+    			<h3>Copyright 2014 | Jennifer Beatty</h3>
+  			</div><!--end footer-->
   
-  </div><!--end page two-->
+  		</div><!--end page three-->
   
-  <!--start page three here-->
-  <div data-role="page" id="books">
   
-  <div data-role="header">
-    <h2>Books I Looooooove</h2>
-  </div><!--end header-->
+  		<!--start page four here-->
+  		<div data-role="page" id="podcasts">
   
-  <div data-role="content">
-    <p>Podcasts I Lisen To</p>
+  			<div data-role="header">
+    			<h2>Jen's Podcasts</h2>
+  			</div><!--end header-->
+  
+  			<div data-role="content">
+    			<p>Podcasts I Lisen To</p>
     
-    <p><a href="modal.html" data-rel="dialog" data-transition="slidedown" title="Let's see where we are">Podcasts</a></p>
-    <p><a href="#home" data-direction="reverse" title="Go Back">Home</a>
-  </div><!--end content-->
+    			<ul data-role="listview" data-inset="true">
+      				<li>Shop Talk Show</li>
+      				<li>Ladies In Tech</li>
+      				<li>UX Pod</li>
+    			</ul>
+    
+    			<ul data-role="listview" data-inset="true">
+      				<li><a href="#blogs" class="ui-btn ui-icon-heart ui-btn-icon-left" title="Blogs">Blogs</a></li>
+      				<li><a href="#books" class="ui-btn ui-icon-heart ui-btn-icon-left" title="Books">Books</a></li>
+      				<li><a href="#podcasts" class="ui-btn ui-icon-heart ui-btn-icon-left" title="Podcasts">Podcasts</a></li>
+    			</ul>
+    			
+				<p><a href="#home" data-role="button" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-left" title="Go Back">Home</a></p>
+  			</div><!--end content-->
   
-  <div data-role="footer">
-    <h3>Copyright 2014 | Jennifer Beatty</h3>
-  </div><!--end footer-->
+  			<div data-role="footer">
+    			<h3>Copyright 2014 | Jennifer Beatty</h3>
+  			</div><!--end footer-->
   
-  </div><!--end page three-->
-  
-  
-  <!--start page four here-->
-  <div data-role="page" id="podcasts">
-  
-  <div data-role="header">
-    <h2>Podcasts I Lisen To</h2>
-  </div><!--end header-->
-  
-  <div data-role="content">
-    <p>Podcasts I Lisen To</p>
-    <p><a href="#home" data-direction="reverse" title="Go Back">Home</a>
-  </div><!--end content-->
-  
-  <div data-role="footer">
-    <h3>Copyright 2014 | Jennifer Beatty</h3>
-  </div><!--end footer-->
-  
-  </div><!--end page four-->
+  		</div><!--end page four-->
   
   
-</body>
+	</body>
 </html>
